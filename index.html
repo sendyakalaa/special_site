@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For someone special</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <audio id="bg-music">
+        <source src="audio/I_Lay_My_Love_on_You.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="heart-bg">
+        <div class="heart heart-1"></div>
+        <div class="heart heart-2"></div>
+        <div class="heart heart-3"></div>
+        <div class="heart heart-4"></div>
+        <div class="heart heart-5"></div>
+    </div>
+
+    <div class="container">
+
+        <section id="gate-section" class="gate-visible">
+
+            <div id="envelope-step" class="envelope-wrapper">
+                <div class="envelope" id="envelope">
+                    <div class="front flap"></div>
+                    <div class="front pocket"></div>
+                    <div class="letter">
+                        <p class="letter-preview">“Di antara banyaknya cerita yang tak sempat dimulai...”</p>
+                    </div>
+                    <div class="wax-seal">
+                        <span>❤️</span>
+                    </div>
+                </div>
+                <p class="instruction-text">Sentuh amplop untuk membuka pesan</p>
+            </div>
+
+            <div id="question-step" class="gate-content" style="display: none; opacity: 0;">
+                <p id="typewriter-text" class="gate-quote"></p>
+
+                <div id="interactive-input" class="interactive-box" style="display: none;">
+                    <p class="input-label">Sebelum lanjut, apakah kamu benar-benar pemilik nama yang ku tuju? </p>
+                    <div class="button-group">
+                        <button id="btn-yes" class="btn-minimal">Yes, that's me</button>
+                        <button id="btn-no" class="btn-minimal-outline">Gatau, kayanya iya deh 🤷‍♂️</button>
+                    </div>
+                </div>
+
+                <div id="gate-action" style="display: none; margin-top: 20px;">
+                    <button id="btn-open" class="btn-minimal">Buka Pesan Ini ✨</button>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="main-content" class="content-hidden">
+            <nav class="nav-tabs">
+                <button class="tab-btn active" data-tab="tab-playlist">Playlist</button>
+                <button class="tab-btn" data-tab="tab-surat">Surat</button>
+            </nav>
+
+            <div class="main-card">
+                <div id="tab-playlist" class="tab-content active">
+                    <h1 class="card-title"></h1>
+                    <p class="tab-desc">Some of my favorite songs to keep you company while reading this:</p>
+                    <div class="playlist-container">
+                        <div class="track active" data-src="audio/lalu_biru.mp3">
+                            <span class="track-number">01</span>
+                            <span class="track-name">Lalu Biru - Eleanor Whisper</span>
+                        </div>
+                        <div class="track" data-src="audio/I_Lay_My_Love_on_You.mp3">
+                            <span class="track-number">02</span>
+                            <span class="track-name">I Lay My Love on You - Westlife</span>
+                        </div>
+                        <div class="track" data-src="audio/Yang_terbuang_dalam_waktu.mp3">
+                            <span class="track-number">03</span>
+                            <span class="track-name">Terbuang Dalam Waktu -  Barasuara</span>
+                        </div>
+                        <div class="track" data-src="audio/dunia.yang.nanti.mp3.mp3">
+                            <span class="track-number">04</span>
+                            <span class="track-name">Dunia Yang Nanti - Raim Laode</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="music-player-bar">
+                    <div class="player-info">
+                        <span id="current-song-title" class="current-song-title">Lalu Biru - Eleanor Whisper</span>
+                        <span class="player-status" id="player-status">Playing...</span>
+                    </div>
+                    <button id="main-play-btn" class="main-play-btn" aria-label="Play/Pause">
+                        <span id="play-icon">⏸</span>
+                    </button>
+                </div>
+
+                <div id="tab-surat" class="tab-content">
+                    <h1 class="card-title">Untukmu,</h1>
+                    <div class="letter-body">
+                        <p>Hai, pemilik nama yang sudah lama singgah di hatiku.</p>
+                        <p>Jika semesta memberikan ku izin untuk berdiri dihadapanmu, akan ku gunakan kesempatan itu seraya berkata.</p>
+                        <p>Barangkali dari ribuan detik yang telah kamu lewati, apakah semesta pernah mempertemukan namaku dengan isi kepalamu, walau hanya sebentar? Seperti hujan yang mampir di jendela, lalu pergi sebelum sempat disadari. Pertanyaan yang sederhana, tetapi tak pernah kutemukan jawabannya. Entah harus kucari ke mana, atau mungkin memang hanya waktu yang mampu menjawabnya.</p>
+                        <p>Sungguh, aku tidak ingin memberikan beban atas perasaan yang tumbuh di dalam diriku untukmu. Karena itu, aku memilih diam. Bukan sebab perasaan ini telah usai, melainkan karena aku tak ingin apa yang tumbuh di dalam diriku berubah menjadi beban di pundakmu. Perasaan ini lahir tanpa meminta izin kepadamu, maka biarlah ia tetap menjadi tanggung jawabku.</p>
+                        <p>Panji, berkali-kali orang bertanya kepadaku,</p>
+                        <p>"Kenapa kamu tidak berusaha?" </p>
+                        <p>Lucu rasanya. Pertanyaan itu telah begitu sering kudengar, hingga nadanya terasa seperti lagu yang diputar berulang-ulang. Mereka mengira diam adalah tanda menyerah. Padahal, ada beberapa langkah yang sengaja tidak kuambil, sebab aku lebih takut kehilangan caraku menghormatimu daripada kehilangan kemungkinan untuk memilikimu.</p>
+                        <p>Namun, untuk detik ini, cara pandangku berubah.</p>
+                        <p>Orang-orang sering kali mengira setiap rasa harus berakhir dengan kata "memiliki". Padahal, jika semesta sedang berbaik hati hari ini, aku hanya ingin menjadi teman yang bisa menyapamu tanpa canggung, berbincang tanpa alasan, lalu mengenalmu tanpa diburu waktu. Bukankah setiap hal yang baik memang layak dimulai dengan perlahan?</p>
+                        <p>—</p>
+                        <p>Panji, banyak yang bertanya bagaimana mungkin satu nama mampu bertahan selama ini. Aku pun tak pernah benar-benar tahu jawabannya. Aku pernah berusaha mengembalikan hatiku pada tempat semula. Kubiarkan waktu bekerja, berharap bisa dengan perlahan menghapus segala yang mengarah kepadamu.</p>
+                        <p>Nyatanya, hidup terus berjalan. Aku pun pernah mencoba memberi kesempatan pada nama yang lain. Pernah ada seseorang yang sempat berjalan berdampingan denganku. Saat itu, aku benar-benar berpikir bahwa perlahan aku mulai melupakanmu.</p>
+                        <p>Namun seiring berjalannya waktu, aku sadar bahwa setiap orang bisa singgah, tetapi tidak semuanya menetap. Dan entah mengapa, namamu selalu memiliki tempat yang tak pernah berhasil digantikan. Setiap kali kupikir langkahku mulai menjauh, namamu selalu menemukan jalan untuk kembali. Seolah waktu tak pernah benar-benar mengizinkan namamu pergi.</p>
+                        <p>—</p>
+                        <p>Aku juga punya alasan di balik semua ini. Alasan yang mungkin tidak pernah mereka ketahui ketika bertanya, "Kenapa kamu tidak berusaha?" </p>
+                        <p>Setiap kali ingin melangkah mendekat, selalu ada sesuatu yang menahanku. Bukan karena perasaanku berubah, tetapi karena rasa takut itu selalu datang lebih dulu. Aku takut kehadiranku membuatmu risih. Takut usahaku justru membuatmu merasa tidak nyaman dan aku juga tidak tahu bagaimana cara untuk memulai.</p>
+                        <p>Sering kali aku bertanya kepada diriku sendiri,</p>
+                        <p>"Apakah rasa takutku lebih besar daripada perasaanku untukmu?"</p>
+                        <p>Ada satu pertanyaan lain yang diam-diam lebih sering menggangguku.</p>
+                        <p>Barangkali, di dalam hatimu sekarang... sudah adakah seseorang yang membuatmu pulang? Seseorang yang tanpa sadar selalu ingin kau ceritakan kepada dunia. Seseorang yang namanya lebih sering kau ingat daripada namaku yang mungkin tak pernah benar-benar singgah di pikiranmu.</p>
+                        <p>Dan jika ternyata suatu hari aku mengetahui bahwa orang itu memang bukan aku, mungkin akan ada sedikit sesak yang harus kupelajari untuk diterima. Sebab sejak awal, aku tidak pernah menuliskan semua ini agar kamu memilihku. </p>
+                        <p>Aku hanya ingin, di antara begitu banyak kata yang tak pernah sempat terucap, setidaknya ada satu tempat yang menyimpan semuanya. Aku hanya berharap, siapa pun orangnya, semoga ia mampu menjagamu sebaik semesta telah menjagamu selama ini.</p>
+                        <p>Terima kasih telah menjadi alasan mengapa aku masih percaya bahwa satu nama bisa membawa begitu banyak semangat dalam hidup seseorang. Dan terima kasih telah meluangkan waktu untuk membaca setiap kata yang kutulis untukmu. </p>
+                        <p>—</p>
+                        <p>Maaf sudah menyita waktu berhargamu untuk membaca surat kecil dariku, karena hanya melalui deretan kalimat ini aku memiliki keberanian untuk berucap.</p>
+                    </div>
+
+                    <div class="card-footer">
+                        <div class="footer-text-group">
+                            <span class="closing-tag">Kalau kamu penasaran dan merasa surat ini layak untuk dibalas, aku ada di balik <span class="highlight">tombol</span> ini , ya! →</span>
+                        </div>
+                        <button id="btn-heart" class="btn-heart">❤</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="popup-modal" class="modal-hidden">
+        <div class="modal-content">
+            <span id="close-modal" class="close-btn">&times;</span>
+            <h2 class="modal-title">Hai Kamu...</h2>
+            <p class="modal-text">Terima kasih sudah membaca dan meluangkan waktu di halaman kecil ini. Kalau kamu tertarik untuk mengobrol lebih lanjut, klik tombol di bawah ini ya!</p>
+            <a href="https://www.instagram.com/sendyakalaw" target="_blank" class="btn-ig">
+                Hubungi Aku di Instagram
+            </a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
